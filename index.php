@@ -23,8 +23,10 @@
              echo 'I win. Muwahaha';
          else
             echo 'No Winner yet, but y are losing.';
-               
-
+         /*
+          $game->display();
+         $game->ai_pick_move($position);    
+         */
         ?>
     </body>
 </html>
