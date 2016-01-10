@@ -3,10 +3,11 @@
 <html>  
     <head>
         <meta http.equiv="Content-Type" content=" text/html; charset=UTF-8">
-        <title></title>
+        <title>tic-tat-toe</title>
     </head>
     
     <body>
+        <h3>welcome to the easiest tic-tat-toe ever</h3>
         <?php 
         require 'Game.php';
        //global
