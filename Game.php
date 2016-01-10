@@ -25,6 +25,7 @@ function __construct($squares) {
 
 
 function winner($token){
+    //horizontal rows
     $won = false;
     if  (($this->position[0]==$token) && ($this->position[1] == $token) && ($this->position[2]==$token))    
     {
@@ -38,6 +39,7 @@ function winner($token){
         {
         $won = true;
         }    
+        //vertical rows
         else if ( ($this->position[0] ==$token) && ($this->position[3] ==$token) && ($this->position[6]==$token))
         {
         $won = true;
@@ -50,6 +52,7 @@ function winner($token){
         {
         $won = true;
         } 
+        //diagional rows
          else if ( ($this->position[0] ==$token) && ($this->position[4] ==$token) && ($this->position[8]==$token))
         {
         $won = true;
@@ -87,7 +90,18 @@ return '<td><a href=”'.$link.'”>­</a></td>';
 }//end show cell
 
 /*
-funcion pick_move_
+function ai_pick_move($new_square) {
+ 
+$token = $this->position[$new_square];
+
+$random = rand(0,8);
+if ($new_square[$random] == '-') {
+$new_square[$random] = 'o';
+} else {
+$this-> ai_pick_move ($new_square);
+}
+return $new_square;
+		}
 */
 }//game class end
         
