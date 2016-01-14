@@ -7,8 +7,9 @@
     </head>
     
     <body>
-        <h3>welcome to the easiest tic-tat-toe ever</h3>
+    <center><h3>Welcome to the easiest tic-tat-toe ever</h3></center>
         <?php 
+        //linking to Game.php
         require 'Game.php';
        //global
         $position = $_GET['board'];
@@ -23,7 +24,7 @@
          else if ($game->winner('o'))
              echo 'I win. Muwahaha';
          else
-            echo 'No Winner yet, but y are losing.';
+            echo 'No Winner yet, but you are losing.';
          /*
           $game->display();
          $game->ai_pick_move($position);    
